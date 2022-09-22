@@ -1,0 +1,18 @@
+@import "../../global.scss";
+.icon {
+  list-style: none;
+  cursor: pointer;
+
+  @include mobile {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  &:hover {
+    color: #0073ec;
+  }
+
+  &.active {
+    color: #0073ec;
+  }
+}

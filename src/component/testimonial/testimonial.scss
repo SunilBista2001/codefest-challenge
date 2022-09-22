@@ -1,0 +1,100 @@
+@import "../../global.scss";
+
+.testimonial {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  h1 {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 225px;
+
+    @include mobile {
+      margin-left: 200px;
+    }
+
+    .slide {
+      width: 68vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include mobile {
+        width: 800px;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 30px;
+        gap: 12px;
+        width: 380px;
+        height: 340px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        text-align: left;
+        justify-content: center;
+
+        @include mobile {
+          width: 380px;
+          height: 340px;
+        }
+        p {
+          display: flex;
+        }
+        .star {
+          display: flex;
+          gap: 4px;
+
+          .icon {
+            font-size: 22px;
+            color: #673de6;
+            cursor: default;
+          }
+        }
+      }
+
+      .user {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        border-width: 2px;
+        width: 280px;
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+
+        .users {
+          margin-top: 15px;
+          display: flex;
+          gap: 20px;
+
+          img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+          }
+          .user-detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+
+        h2 {
+          font-weight: 500;
+        }
+        h4 {
+          width: 180px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

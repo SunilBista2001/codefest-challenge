@@ -1,0 +1,86 @@
+@import "../../global.scss";
+.feature {
+  width: 100%;
+  height: calc(100vh - 170px);
+  overflow: hidden;
+
+  .container {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 35px;
+      font-weight: 500;
+
+      @include mobile {
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+
+    .items {
+      width: 100%;
+      padding: 45px 50px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(3, 300px);
+      gap: 70px;
+
+      @include mobile {
+        grid-template-columns: repeat(2, 130px);
+        gap: 50px;
+      }
+
+      .wrapper {
+        margin-left: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        @include mobile {
+          margin-left: 0;
+          gap: 5px;
+        }
+
+        img {
+          width: 80px;
+
+          @include mobile {
+            width: 40px;
+          }
+        }
+
+        .desc {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          @include mobile {
+            gap: 4px;
+          }
+
+          h2 {
+            width: max-content;
+            font-size: 20px;
+            font-weight: 500;
+
+            @include mobile {
+              width: 150px;
+              font-size: 15px;
+            }
+          }
+
+          h4 {
+            width: 220px;
+            font-weight: 400;
+            @include mobile {
+              width: 180px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

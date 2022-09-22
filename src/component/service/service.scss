@@ -1,0 +1,105 @@
+@import "../../global.scss";
+.service {
+  width: 100%;
+  height: 100%;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 500;
+      width: 270px;
+      border: 1px solid none;
+      background: #0073ec;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      border-radius: 4px;
+      color: white;
+    }
+  }
+
+  .plans {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .planList {
+      width: 100%;
+      height: 100%;
+      h2 {
+        text-align: center;
+        font-weight: 500;
+        color: #2e93ee;
+      }
+      ul {
+        flex-direction: column;
+        gap: 20px;
+        li {
+          list-style: none;
+        }
+      }
+      h3 {
+        margin-top: 15px;
+        text-align: center;
+        font-weight: 500;
+      }
+      h4 {
+        margin-top: 5px;
+        text-align: center;
+        color: #2e93ee;
+        font-weight: 400;
+        font-size: 25px;
+      }
+    }
+    button {
+      margin-top: 8px;
+      width: 220px;
+      padding: 5px;
+      cursor: pointer;
+      background: transparent;
+      border: 2px solid black;
+      font-size: 15px;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: black;
+        color: #fff;
+        transform: scale(1.05);
+      }
+    }
+  }
+  ul {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    justify-content: center;
+    width: 100%;
+
+    @include mobile {
+      gap: 50px;
+    }
+
+    .icon {
+      list-style: none;
+      cursor: pointer;
+
+      &:hover {
+        color: #0073ec;
+      }
+
+      &.active {
+        color: #0073ec;
+      }
+    }
+  }
+}
